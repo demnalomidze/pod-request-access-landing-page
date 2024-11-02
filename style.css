@@ -1,0 +1,288 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Chivo", sans-serif;
+
+  /* Background image */
+  background-image: url("images/image-host.jpg"); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background fixed during scroll (optional) */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.head-text {
+  font-size: 40px;
+  color: white;
+}
+
+.for-tablet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mid-text {
+  font-size: 32px;
+  color: #54e6af;
+  text-align: center;
+  font-weight: 300;
+}
+
+.mid-text1 {
+  color: #fff;
+}
+
+p {
+  color: #c2cbe5;
+  padding-inline: 15px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.logos {
+  display: flex;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.spotify {
+  cursor: pointer;
+}
+
+.apple {
+  cursor: pointer;
+}
+
+.google {
+  cursor: pointer;
+}
+
+.pocket {
+  cursor: pointer;
+}
+
+.circle {
+  display: none;
+}
+
+.circle2 {
+  display: none;
+}
+
+.bottom-group {
+  margin-top: 40px;
+}
+
+.email-container {
+  display: grid;
+  gap: 10px;
+}
+
+#Email {
+  background: #2c344b;
+  border: none;
+  text-align: left;
+  height: 45px;
+  border-radius: 30px;
+  width: 270px;
+  padding-left: 30px;
+  font-size: 18px;
+}
+
+.click-group {
+  width: 300px;
+  background-color: #54e6af;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.click-group:hover {
+  background-color: #b8fda1;
+}
+
+.click-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #121725;
+}
+
+@media screen and (min-width: 765px) {
+  body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/tablet image.jpg");
+    object-fit: cover;
+    background-color: #121725;
+    background-size: 460px 870px; /* Width and height of the image */
+    background-position: top right; /* Position it at the top-right */
+  }
+
+  #dynamicErrorMessage {
+    margin-top: 20px; /* Add space between the bottom-group and the error message */
+    display: block; /* Ensure it's visible */
+    text-align: center; /* Center the message (optional) */
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .content {
+    width: 680px;
+    align-items: flex-start;
+    margin-left: 44px;
+    height: 100%;
+  }
+
+  .head {
+    gap: 13px;
+  }
+
+  .mid-text {
+    font-size: 50px;
+    text-align: left;
+  }
+
+  p {
+    text-align: left;
+    padding-inline: 0px;
+    font-size: 17px;
+    line-height: 25px;
+    padding-right: 90px;
+    margin-top: 40px;
+  }
+
+  .for-tablet {
+    align-items: flex-start;
+    background-color: #121725;
+    width: 514px;
+    margin-top: 109px;
+  }
+
+  .logos {
+    order: 2; /* Move logos after bottom-group */
+    margin-top: 40px;
+  }
+
+  .email-container {
+    display: flex; /* Use flexbox to arrange the input and button */
+
+    position: relative; /* Relative positioning for the button */
+  }
+
+  #Email {
+    width: 450px;
+  }
+
+  .click-group {
+    display: flex; /* Center the text inside */
+    justify-content: center; /* Center horizontally */
+    top: 4px;
+    bottom: 4px;
+    width: 175px; /* Fixed width for the button */
+    position: absolute; /* Position it over the input */
+    right: 4px; /* Align to the right of the input */
+    height: 39px;
+  }
+
+  .click-text {
+    font-size: 16px;
+    height: 50%;
+  }
+
+  .spotify {
+    width: 80px;
+    height: 30px;
+  }
+
+  .apple {
+    width: 80px;
+    height: 30px;
+  }
+
+  .google {
+    width: 120px;
+    height: 30px;
+  }
+
+  .pocket {
+    width: 125px;
+    height: 30px;
+  }
+
+  .circle {
+    display: block;
+    order: 3;
+    bottom: 105px;
+    right: 0px;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/dektstop\ image.jpg");
+    object-fit: cover;
+    background-color: #121725;
+    background-size: 960px 655px; /* Width and height of the image */
+    background-position: right; /* Position it at the top-right */
+  }
+
+  .content {
+    margin-left: 160px;
+  }
+
+  .for-tablet {
+    width: 680px;
+  }
+
+  .mid-text {
+    font-weight: 100;
+  }
+
+  p {
+    padding-right: 178px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 100;
+  }
+
+  .logos {
+    gap: 40px;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .circle2 {
+    width: 230px;
+    display: block;
+    order: 3;
+    bottom: 105px;
+    right: 0px;
+    position: absolute;
+  }
+}
